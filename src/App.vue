@@ -1,26 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>La prueba</h1>
+  <CardContainer />
+  <optionAPI />
+  <CompostionAPI />
+  <ComponenteVFor />
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import CompostionAPI from "@/components/OptionsAPI.vue";
+import optionAPI from "@/components/CompositionAPI.vue";
+import CardContainer from "@/components/CardContainer.vue";
+import ComponenteVFor from "@/components/ComponenteVFor.vue";
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
